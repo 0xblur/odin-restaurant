@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Sopa de Piedra",
+    "description": "Sopa de Piedra literally means 'Exquisite Luxurious Soup' in Quechua. It is composed of the most fine ingredients in Peru directly extracted from the Apus.",
+    "image": "sopa-de-piedra.jpeg"
+  },
+  {
+    "name": "Cuy Chactado",
+    "description": "The most expensive animal in Peru. Our Cuy Chactado is submerged in Ghee instead of vegetable oil. It is also spiced instead of made plain in order to hide the real flavor of this animal.",
+    "image": "cuy-chactado.jpeg"
+  },
+  {
+    "name": "Ceviche",
+    "description": "Who does not know what Ceviche is? If you weren't aware, please go kill yourself and don't intend to appear in our restaurant. We only serve educated people.",
+    "image": "ceviche.jpeg"
+  },
+  {
+    "name": "Chancho al Palo",
+    "description": "Buenazo.",
+    "image": "chancho-al-palo.jpeg"
+  }
+]
