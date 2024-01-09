@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Prociono";
+  src: url("./fonts/prociono-master/webfonts/Prociono-Regular-webfont.woff");
+}
+
+:root {
+  --green: #817856;
+  --brown: #B9997F;
+}
+
+body {
+  font-family: 'Prociono', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav ul li {
+  min-height: 20px;
+  padding: 10px;
+  background-color: var(--brown);
+}
+
+nav ul li:active {
+  background-color: #817856;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f2f2ea;
+  /* display: inline-block; */
+  /* margin: 0 auto; */
+}
+
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Create backgrond without affecting child elements */
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: no-repeat center/cover url("../assets/restaurant-kitchen.jpg");
+  filter: opacity(80%) grayscale(99%);
+  z-index: -1;
+}
+
+#logo {
+  -webkit-text-stroke: 2px black;
+  text-align: center;
+  font-size: 4rem;
+  padding: 10px;
+}
+
+#header {
+  font-size: 1.5rem;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+#content figure {
+  display: table;
+  text-align: center;
+}
+
+#content img {
+  min-width: 100%;
+  height: 400px;
+}
+
+#content figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  max-width: 100%;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.section:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.section p {
+  text-align: justify;
+  margin: 0 1rem;
+  padding: 0 1rem;
+  max-width: 50ch;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
